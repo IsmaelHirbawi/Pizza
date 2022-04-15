@@ -8,6 +8,6 @@ package com.mycompany.pizzaapp;
  *
  * @author loole
  */
-public class Pizza {
-    
+public abstract class Pizza {
+    public abstract String getInfo();  //all classes must have getInfo it's return all parameters as a string g
 }

@@ -9,5 +9,23 @@ package com.mycompany.pizzaapp;
  * @author loole
  */
 public class Calories {
+    private float calories;
+    
+    public Calories(){
+        
+    }
+
+    public Calories(float calories) {
+        this.calories = calories;
+    }
+
+    public float getCalories() {
+        return calories;
+    }
+
+    public void setCalories(float calories) {
+        this.calories = calories;
+    }
+     
     
 }
