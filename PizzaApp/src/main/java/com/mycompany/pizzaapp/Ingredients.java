@@ -56,7 +56,7 @@ public class Ingredients extends Pizza{
 
     @Override
     public String getInfo() {
-        return name + " " + weight + " " + Calories;  // return the parameteres in the class as a string 
+        return name + " " + weight + " " + calories;  // return the parameteres in the class as a string 
     }
     
 }
