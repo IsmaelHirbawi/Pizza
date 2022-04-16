@@ -4,7 +4,7 @@
  */
 package com.mycompany.pizzaapp;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 /**
  *
@@ -12,19 +12,21 @@ import java.util.ArrayList;
  */
 public class Ingredients extends Pizza{
     
-    ArrayList<Ingredients> ingredients = new ArrayList<>();
+   // ArrayList<Ingredients> ingredients = new ArrayList<>();
     private String name;
-    private float weight;
+    private double weight;
     private Calories calories;
+    private Cost cost;
     
     public Ingredients(){
         
     }
 
-    public Ingredients(String name, float weight, Calories calories) {
+    public Ingredients(String name, double weight, Calories calories, Cost cost) {
         this.name = name;
         this.weight = weight;
         this.calories = calories;
+        this.cost = cost;
     }
 
     public String getName() {
@@ -35,7 +37,7 @@ public class Ingredients extends Pizza{
         this.name = name;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -50,13 +52,19 @@ public class Ingredients extends Pizza{
     public void setCalories(Calories calories) {
         this.calories = calories;
     }
-    
-    
-    
 
+    public Cost getCost() {
+        return cost;
+    }
+
+    public void setCost(Cost cost) {
+        this.cost = cost;
+    }
+    
+    
     @Override
     public String getInfo() {
-        return name + " " + weight + " " + calories;  // return the parameteres in the class as a string 
+        return "The " + name + " ,His weight is : " + weight + " ,calories : " + calories.getCalories() +" ,And the cost is : " + cost.getCost();  // return the parameteres in the class as a string 
     }
     
 }

@@ -9,7 +9,8 @@ package com.mycompany.pizzaapp;
  * @author loole
  */
 public class Calories {
-    private float calories;
+    private double calories;
+    private static double sumOfCalories;
     
     public Calories(){
         
@@ -17,14 +18,19 @@ public class Calories {
 
     public Calories(float calories) {
         this.calories = calories;
+        sumOfCalories += calories;
     }
 
-    public float getCalories() {
+    public double getCalories() {
         return calories;
     }
 
-    public void setCalories(float calories) {
+   /* public void setCalories(float calories) {
         this.calories = calories;
+    }*/
+    
+    public void caloriesSum(double calories){
+        this.calories += calories; 
     }
      
     
