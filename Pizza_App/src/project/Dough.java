@@ -12,7 +12,6 @@ public class Dough extends Pizza{
     private String sizeOfDough;
     private String typeOfDough;
     private Calories calories;
-    private Cost cost;
     
     public Dough(){
         
@@ -22,7 +21,6 @@ public class Dough extends Pizza{
         this.sizeOfDough = sizeOfDough;
         this.typeOfDough = typeOfDough;
         this.calories = calories;
-        this.cost = cost;
     }
 
     public String getSizeOfDough() {
@@ -59,6 +57,6 @@ public class Dough extends Pizza{
     
     @Override
     public String getInfo(){
-        return "The type of dough is : " + typeOfDough + " ,His size : " + sizeOfDough + " ,calories : " + calories.getCalories() + " ,cost : " + cost.getCost();
+        return "The type of dough is : " + typeOfDough + " ,His size : " + sizeOfDough + " ,calories : " + calories.getCalories();
     }
 }

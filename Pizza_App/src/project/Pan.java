@@ -10,16 +10,14 @@ package project;
  */
 public class Pan extends Pizza{
     private String typeOfPan;
-    private Cost cost;
     private int sizeOfPan;
     
     public Pan(){
         
     }
 
-    public Pan(String typeOfPan, Cost cost, int sizeOfPan) {
+    public Pan(String typeOfPan, int sizeOfPan) {
         this.typeOfPan = typeOfPan;
-        this.cost = cost;
         this.sizeOfPan = sizeOfPan;
     }
 
@@ -31,15 +29,6 @@ public class Pan extends Pizza{
         this.sizeOfPan = sizeOfPan;
     }
 
-    
-
-    public Cost getCost() {
-        return cost;
-    }
-
-    public void setCost(Cost cost) {
-        this.cost = cost;
-    }
 
     public String getTypeOfPan() {
         return typeOfPan;
@@ -51,7 +40,7 @@ public class Pan extends Pizza{
 
     @Override
     public String getInfo() {
-        return "The type of the pan is : " + typeOfPan + " ,Cost : " + cost.getCost();
+        return "The type of the pan is : " + typeOfPan;
     }
     
     
