@@ -9,9 +9,12 @@ package project;
  * @author loole
  */
 public class Quantity {
-    static int pan = 1;
-    static int deepDish = 20;
-    static int rectangleDish = 10;
+    static int panBig = 1;
+    static int panSmall = 1;
+    static int deepDishBig = 20;
+    static int deepDishSmall = 20;
+    static int rectangleDishBig = 10;
+    static int rectangleDishSmall = 10;
     static int dough = 100;
     static int tomatoSouce = 1000;
     static int cheese = 1000;
