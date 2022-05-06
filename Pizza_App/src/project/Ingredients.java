@@ -4,66 +4,36 @@
  */
 package project;
 
-//import java.util.ArrayList;
-
 /**
  *
  * @author loole
  */
-public class Ingredients extends Pizza{
-    
-   // ArrayList<Ingredients> ingredients = new ArrayList<>();
-    private String name;
-    private Calories calories;
-    private Cost cost;
-    
-    public Ingredients(){
-        
-    }
-
-    public Ingredients(String name, double weight, Calories calories, Cost cost) {
-        this.name = name;
-        this.weight = weight;
-        this.calories = calories;
-        this.cost = cost;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-
-    public Calories getCalories() {
-        return calories;
-    }
-
-    public void setCalories(Calories calories) {
-        this.calories = calories;
-    }
-
-    public Cost getCost() {
-        return cost;
-    }
-
-    public void setCost(Cost cost) {
-        this.cost = cost;
+public class Ingredients {
+    static String chicage(){
+        return "cheese" + " tomato souce";
     }
     
-    
-    @Override
-    public String getInfo() {
-        return "The " + name + " ,His weight is : " + weight + " ,calories : " + calories.getCalories() +" ,And the cost is : " + cost.getCost();  // return the parameteres in the class as a string 
+    static String detroit(){
+        return "cheese" + " pepperoni" + " tomato souce" + " garlic";
     }
     
+    static String greek(){
+        return "cheese " + " black olive" + " onions";
+    }
+    
+    static String neapolitan(){
+        return "cheese" + " tomato souce";
+    }
+    
+    static String newyork(){
+        return "tehyme" + " tomato";
+    }
+    
+    static String sicilian(){
+        return "onion" + " tomato";
+    }
+    
+    static String vegetable(){
+        return "cheese" + " tomato souce" + " tomato" + " black olive";
+    }
 }
