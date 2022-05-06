@@ -11,16 +11,14 @@ package project;
 public class Dough extends Pizza{
     private String sizeOfDough;
     private String typeOfDough;
-    private Calories calories;
     
     public Dough(){
         
     }
 
-    public Dough(String sizeOfDough, String typeOfDough, Calories calories, Cost cost) {
+    public Dough(String sizeOfDough, String typeOfDough) {
         this.sizeOfDough = sizeOfDough;
         this.typeOfDough = typeOfDough;
-        this.calories = calories;
     }
 
     public String getSizeOfDough() {
@@ -38,25 +36,9 @@ public class Dough extends Pizza{
     public void setTypeOfDough(String typeOfDough) {
         this.typeOfDough = typeOfDough;
     }
-
-    public Calories getCalories() {
-        return calories;
-    }
-
-    public void setCalories(Calories calories) {
-        this.calories = calories;
-    }
-
-    public Cost getCost() {
-        return cost;
-    }
-
-    public void setCost(Cost cost) {
-        this.cost = cost;
-    }
     
     @Override
     public String getInfo(){
-        return "The type of dough is : " + typeOfDough + " ,His size : " + sizeOfDough + " ,calories : " + calories.getCalories();
+        return "The type of dough is : " + typeOfDough + " ,His size : " + sizeOfDough;
     }
 }
