@@ -14,7 +14,7 @@ import project.Messages;
  */
 public class DoughDoesNotFitWithPan {
 
-    public class AccountNotFoundException extends Exception {
+    public class DoughDoesNotFit extends Exception {
 
         @Override
         public String getMessage() {
