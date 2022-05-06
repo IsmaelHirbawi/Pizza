@@ -15,6 +15,5 @@ public class PizzaApp {
         // new pizzaFram().setVisible(true);
         //PizzaLogger pizzaLogger = new PizzaLogger();
         //pizzaLogger.log("pizza 1");
-        System.out.println(Checker.checkIngredients("chicage"));
     }
 }
